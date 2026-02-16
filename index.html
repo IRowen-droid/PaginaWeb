@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profesional Portfolio</title>
+    <title>Profesional Portfolio | Erik Rivera</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <h1>My professional portfolio</h1>
-        <ul>
-        <li>About me</li>
-        <li>Projects</li>                
-        <li>Social Media</li>
-        </ul>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo" style="height: 40px; width: auto;">
+            </div>
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
         </nav>
     </header>
+
     <main>
         <section id="about" class="about">
             <div class="container">
@@ -24,26 +27,61 @@
             </div>
             <div id="about-info" class="container">
                 <h3>About me</h3>
-                <p>Hi, I'm Erik Rivera, Student of Ingenieria en Tecnologias de la Informacion e Innovacion Digital</p>
+                <p>Hi, I'm Erik Rivera, Student of Ingenieria en Tecnologias de la Informacion e Innovacion Digital.</p>
+                <p></p>
+                <p></p>
+                
+                <div class="skills-container">
+                    <h4>Skills</h4>
+                    <ul class="skills-list">
+                        <li>Figma</li>
+                        <li>Python</li>
+                        <li>HTML & CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <div class="container">
-         <section id="projects" class="projects">
-            <h2>My Projects</h2>
-            <a href="https://github.com/IRowen-droid" target="_blank">Mi GitHub</a>
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="images/veria.png" alt="FIGMA - Veria">
+                        <h3>FIGMA - Veria</h3>
+                        <p>algo</p>
+                        <small>Tech: Figma, UI/UX</small>
+                     
+                    </article>
+
+                    <article class="project-card">
+                        <img src="images/maestros.png" alt="Figma - App Estudiantes">
+                        <h3>Figma - App para maestros y estudiantes</h3>
+                        <p>algo</p>
+                        <small>Tech: Figma, Prototyping</small>
+                       
+                    </article>
+
+                    <article class="project-card">
+                        <img src="images/pos.png" alt="POS Python">
+                        <h3>POS en Python</h3>
+                        <p>algo</p>
+                        <small>Tech: Python, SQL</small>
+                        
+                    </article>
+                </div>
+            </div>
         </section>
-        </div>
-        <div class="container">
-            <section id="contact" class="contact">
-            <h4>Social Media</h4>
-            <ul>
-            <li><a href="https://www.linkedin.com/in/erik-israel-rivera-salazar-8894a9324/" target="_blank">LinkedIn</a></li>                <li><a href="https://www.instagram.com/irowensito/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.facebook.com/share/1AbZGySe3e/" target="_blank">Facebook</a></li>
-            </ul>
-        </section>
-    </div>
-    </main>
-    <footer></footer>
-</body>
-</html>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h4>Contact me</h4>
+            
+                <ul class="social-list">
+                    <li><a href="mailto:rivera.salazar.erik1@gmail.com?subject=hola%20pije&body=hola%20comotas" target="_blank">Mail</a></li>
+                    <li><a href="https://www.linkedin.com/in/erik-israel-rivera-salazar-8894a9324/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/irowensito/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/share/1AbZGySe3e/" target="_blank">Facebook</a></li>
+                </ul>
+                
