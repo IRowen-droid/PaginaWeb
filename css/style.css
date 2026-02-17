@@ -10,7 +10,7 @@ html {
 
 body {
     font-size: 15px;
-    font-family: BM Space, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #22162B;
     color: white;
 }
@@ -30,7 +30,7 @@ nav {
 }
 
 nav .logo img {
-    height: 45px;
+    height: 40px;
 }
 
 nav ul li {
@@ -42,6 +42,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     transition: 0.3s;
+    font-weight: 500;
 }
 
 nav ul li a:hover {
@@ -65,6 +66,14 @@ section {
     background-color: #451F55;
 }
 
+.profile-img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #F8C630;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
 .about #about-info {
     max-width: 55%;
 }
@@ -73,13 +82,6 @@ section {
     font-size: 3.5rem;
     color: #F8C630;
     margin-bottom: 1rem;
-}
-
-.profile-img {
-    max-width: 28vh;
-    height: auto;
-    border-radius: 15px;
-    border: 3px solid #F8C630;
 }
 
 .skills-list {
@@ -138,17 +140,12 @@ section {
     margin-bottom: 15px;
 }
 
-.project-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 15px;
-}
-
 .project-card a {
     color: #E54F6D;
     text-decoration: none;
     font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
 }
 
 .project-card a:hover {
@@ -164,43 +161,26 @@ section {
     color: #F8C630;
 }
 
-.social-icons {
+.contact-links-text {
+    list-style: none;
+    margin: 40px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin: 40px 0;
-}
-
-.email-link {
-    display: flex;
-    align-items: center;
     gap: 15px;
-    color: #F8C630 !important;
-    font-size: 1.4rem !important;
+}
+
+.contact-links-text li a {
     text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
     transition: 0.3s;
+    border-bottom: 1px solid transparent;
 }
 
-.email-link:hover {
-    transform: scale(1.05);
-    color: #E54F6D !important;
-}
-
-.icon-grid {
-    display: flex;
-    gap: 25px;
-}
-
-.icon-link img {
-    width: 50px;
-    height: 50px;
-    transition: 0.3s;
-}
-
-.icon-link:hover img {
-    transform: scale(1.2);
-    filter: brightness(1.2);
+.contact-links-text li a:hover {
+    color: #F8C630;
+    padding-left: 10px; 
+    border-bottom: 1px solid #F8C630;
 }
 
 .cv-download {
@@ -219,15 +199,16 @@ section {
     color: #22162B;
 }
 
-p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
 footer {
     padding: 30px;
     background-color: #1a1121;
     text-align: center;
     border-top: 1px solid #451F55;
+
+}
+
+footer img {
+    width: 10px; 
+    height: auto;
+    margin: 0 10px;
 }
